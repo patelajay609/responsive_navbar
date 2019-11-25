@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>responsive nav</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#"><!-- <img src="images/logo.png"/> -->brand</a>
+	    </div>
+	    <div class="responsive-button" onclick="navToggale(this)">
+	    	<div class="navbar line1"></div>
+	    	<div class="navbar line2"></div>
+	    	<div class="navbar line3"></div>	
+	    </div>
+		<ul class="navigation">
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#">about us</a></li>
+	      <li><a href="#">services</a></li>
+	      <li><a href="#">products</a></li>
+	      <li><a href="#">contact us</a></li>
+	    </ul>
+	  </div>
+	</nav>
+</header>
+
+<section>
+	<div class="container">	
+		<div style="width:100%; height: 100vh;"></div>
+	</div>
+</section>
+
+<section>
+	<footer>
+		<div class="container">	
+			<div class="footer-wrapper">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="footer-col-block">
+							<div class="footer-logo"><a href="#"><!-- <img src="images/footer-logo.png"/> -->brand</a></div>
+							<h5 class="dmr-title">Disclaimer</h5>
+							<div class="dmr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-col-block">
+							<h5 class="footer-title">Quick Links</h5>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Service</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Outlets</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-col-block">
+							<h5 class="footer-title">Follow Us On</h5>
+							<ul class="social-icon">
+								<li><a href="#"><img src="images/facebook.png"/></a></li>
+								<li><a href="#"><img src="images/twitter.png"/></a></li>
+								<li><a href="#"><img src="images/linkedin.png"/></a></li>
+								<li><a href="#"><img src="images/youtube.png"/></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-col-block">
+							<h5 class="footer-title">Contact Us</h5>
+							<address class="footer-address">
+								<ul>
+								 	<li>
+								 		<i class="fa fa-address-book"></i> 
+								 		<div class="footer-address-text">Vijay Nagar, Indore</div>
+								 	</li>
+								 	<li>
+								 		<a href="tel:+912345678910">
+								 			<i class="fa fa-phone"></i> 
+								 			<div class="footer-address-text">+91 2345678910</div>
+								 		</a>
+								 	</li>
+								 	<li>
+								 		<a href="mailto:info@xyz.com">
+								 			<i class="fa fa-envelope"></i> 
+								 			<div class="footer-address-text">info@xyz.com</div>
+								 		</a>
+								 	</li>
+								</ul>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">© 2019 All rights reserved</div>
+		</div>
+	</footer>
+</section>
+
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+   function navToggale(x) {
+	  x.classList.toggle("change");
+	}
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('ul li a').click(function(){
+	    $('li a').removeClass("active");
+	    $(this).addClass("active");
+	});
+	});
+</script>
+
+
